@@ -1,0 +1,35 @@
+baseurl = "https://sharatvisweswara.github.io"
+languageCode = "en"
+title = "Sharat Visweswara"
+theme = "hemingway2"
+copyright = "&copy; <a href=\"https://github.com/sharatvisweswara\">Sharat Visweswara</a> 2017"
+# disqusShortname = "shortname"
+# googleAnalytics = ""
+description = "Sharat Says"
+keywords = ["evocalize"]
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+
+[params.highlight]
+style = "github"
+languages = ["java", "ruby", "python"]
+
+[[params.social]]
+url = "https://github.com/sharatvisweswara"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://twitter.com/sharatvis"
+fa_icon = "fa-twitter"
+
+[[params.social]]
+url = "https://linkedin.com/in/sharatvisweswara"
+fa_icon = "fa-linkedin"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"
