@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:sharatvisweswara/sharatvisweswara.github.io.git
 	branch = master
+[submodule "themes/hemingway2"]
+	path = themes/hemingway2
+	url = https://github.com/beli3ver/hemingway2.git
