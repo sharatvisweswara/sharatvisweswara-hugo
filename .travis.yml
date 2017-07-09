@@ -1,0 +1,15 @@
+
+language: go
+
+go:
+    - 1.8.3
+
+before_script:
+  - go get -v github.com/gohugoio/hugo
+
+script:
+  - hugo
+
+after_script:
+  - git status
+  
