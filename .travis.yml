@@ -1,4 +1,6 @@
 
+dist: trusty
+
 language: go
 
 go:
@@ -10,5 +12,11 @@ install:
 script:
   - hugo
 
-after_script:
-  - git status
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_API_KEY
+  repo: sharatvisweswara.github.io
+  target_branch: master
+  on:
+    branc: master
