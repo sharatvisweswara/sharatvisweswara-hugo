@@ -7,7 +7,7 @@ go:
     - 1.8.3
 
 install:
-  - go get -v github.com/gohugoio/hugo
+  - go get github.com/gohugoio/hugo
 
 script:
   - git clone https://travis-ci:$GITHUB_API_KEY@github.com/sharatvisweswara/sharatvisweswara.github.io.git public
