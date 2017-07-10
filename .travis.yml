@@ -10,14 +10,8 @@ install:
   - go get -v github.com/gohugoio/hugo
 
 script:
+  - git clone https://travis-ci:$GITHUB_API_KEY@github.com/sharatvisweswara/sharatvisweswara.github.io.git public
   - hugo
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: public
-  github_token: $GITHUB_API_KEY
-  repo: sharatvisweswara.github.io
-  target_branch: master
-  on:
-    branc: master
+after_success:
+  - cd public && git status
